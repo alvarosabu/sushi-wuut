@@ -7,6 +7,9 @@
     "preview": "nuxt preview"
   },
   "devDependencies": {
-    "nuxt": "3.0.0-rc.3"
+    "@unocss/nuxt": "^0.34.1",
+    "nuxt": "3.0.0-rc.3",
+    "prettier": "^2.6.2",
+    "@alvarosabu/prettier-config": "^1.1.0"
   }
 }
