@@ -3,10 +3,19 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
+    "dev:https": "nuxt dev --https",
     "generate": "nuxt generate",
     "preview": "nuxt preview"
   },
   "devDependencies": {
-    "nuxt": "3.0.0-rc.3"
+    "@alvarosabu/prettier-config": "^1.1.0",
+    "@iconify-json/carbon": "^1.1.7",
+    "@marvr/storyblok-rich-text-vue-renderer": "3.2.1",
+    "@storyblok/nuxt": "^4.0.1",
+    "@unocss/nuxt": "^0.34.1",
+    "@unocss/preset-icons": "^0.45.5",
+    "axios": "^0.27.2",
+    "nuxt": "3.0.0-rc.3",
+    "prettier": "^2.6.2"
   }
 }
