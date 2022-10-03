@@ -4,10 +4,7 @@
   <header class="">
     <div class="container mx-auto flex">
       <div class="flex-1">
-        <a
-          href="/"
-          class="logo flex items-center font-display font-extrabold text-gray-800"
-        >
+        <a href="/" class="logo flex items-center font-display text-xl font-extrabold text-gray-800">
           <img src="/logo.svg" class="h-10 w-10 mr-2" alt="Sushi Wuut" />
           Sushi<span class="text-shrimp-600">Wuut</span>
         </a>

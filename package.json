@@ -1,5 +1,15 @@
 {
-  "private": true,
+  "name": "sushi-wuut",
+  "version": "1.0.0",
+  "description": "Static recipe site example for Youtube Series on Nuxt + Storyblok",
+  "author": "Alvaro Saburido <hola@alvarosaburido.dev>",
+  "keywords": [
+    "nuxt",
+    "storyblok",
+    "static",
+    "vue",
+    "nuxt3"
+  ],
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -8,14 +18,14 @@
     "preview": "nuxt preview"
   },
   "devDependencies": {
-    "@alvarosabu/prettier-config": "^1.1.0",
-    "@iconify-json/carbon": "^1.1.7",
+    "@alvarosabu/prettier-config": "^1.2.0",
+    "@iconify-json/carbon": "^1.1.8",
     "@marvr/storyblok-rich-text-vue-renderer": "3.2.1",
-    "@storyblok/nuxt": "^4.0.1",
-    "@unocss/nuxt": "^0.34.1",
-    "@unocss/preset-icons": "^0.45.5",
+    "@storyblok/nuxt": "^4.4.1",
+    "@unocss/nuxt": "^0.45.26",
+    "@unocss/preset-icons": "^0.45.26",
     "axios": "^0.27.2",
-    "nuxt": "3.0.0-rc.3",
-    "prettier": "^2.6.2"
+    "nuxt": "3.0.0-rc.11",
+    "prettier": "^2.7.1"
   }
 }

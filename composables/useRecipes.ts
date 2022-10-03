@@ -17,9 +17,7 @@ export function useRecipes() {
       ...recipe,
       content: {
         ...recipe.content,
-        category: data.rels.find(
-          ({ uuid }) => uuid === recipe.content.category,
-        ),
+        category: data.rels.find(({ uuid }) => uuid === recipe.content.category),
       },
     }))
   }
@@ -34,6 +32,7 @@ export function useRecipes() {
         is_startpage: false,
       })
       const story = data.stories[0]
+      story.content.category = data.rels.find(({ uuid }) => uuid === story.content.category)
       return story
     } catch (error) {
       console.error(error)

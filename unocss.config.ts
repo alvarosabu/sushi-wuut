@@ -5,6 +5,7 @@ import {
   transformerVariantGroup,
   presetIcons,
   presetTypography,
+  presetUno,
 } from 'unocss'
 
 export default defineConfig({
@@ -26,6 +27,7 @@ export default defineConfig({
     },
   },
   presets: [
+    presetUno(),
     presetWebFonts({
       provider: 'google', // default provider
       fonts: {

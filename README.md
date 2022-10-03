@@ -1,6 +1,6 @@
-# Nuxt 3 Minimal Starter
+# Sushi Wuut 🍣
 
-Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
+> Example project using [Nuxt v3](https://v3.nuxtjs.org/) and [Storyblok](https://www.storyblok.com/) to create an static recipe app
 
 ## Setup
 
@@ -40,3 +40,5 @@ npm run preview
 ```
 
 Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.
+
+![repository-banner.png](https://res.cloudinary.com/alvarosaburido/image/upload/v1612193118/as-portfolio/Repo_Banner_kexozw.png)
