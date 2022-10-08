@@ -12,7 +12,11 @@ const story = await fetchRecipeBySlug(slug as string)
   <div class="text-gray-600">
     <header v-if="story" class="relative mb-24 container mx-auto">
       <div class="flex justify-end w-1/2">
-        <img class="rounded-lg aspect-square" :src="story.content.media.filename" :alt="story.content.media.alt" />
+        <img
+          class="rounded-lg aspect-square object-cover"
+          :src="story.content.media.filename"
+          :alt="story.content.media.alt"
+        />
       </div>
       <div class="bg-white rounded-lg overflow-hidden shadow-md p-8 absolute w-1/2 top-4 right-8">
         <h1 class="text-shrimp-500 font-display text-4xl font-bold mb-8 w-2/3">

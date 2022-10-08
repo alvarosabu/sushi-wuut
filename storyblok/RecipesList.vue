@@ -17,27 +17,13 @@ await fetchRecipes()
         {{ blok.title }}
       </h2>
       <div class="grid grid-cols-4 gap-12">
-        <article
-          v-for="{ uuid, content, slug } of recipes"
-          class="bg-white rounded-lg overflow-hidden shadow-md"
+        <RecipeCard
+          v-for="{ uuid, content, slug } in recipes"
           :key="uuid"
-        >
-          <NuxtLink :to="`/recipes/${slug}`">
-            <img class="w-full" :src="content.media.filename" :alt="content.media.alt" />
-            <div class="p-4 relative min-h-200px">
-              <h3 class="font-bold text-xl text-shrimp-600 w-1/2">
-                {{ content.title }}
-              </h3>
-              <span class="bg-gray-100 rounded-full absolute right-8 -top-33px p-4">
-                <img
-                  class="w-36px h-36px filter-grayscale contrast-25"
-                  :src="content.category.content.icon.filename"
-                  alt=""
-                />
-              </span>
-            </div>
-          </NuxtLink>
-        </article>
+          :uuid="uuid"
+          :content="content"
+          :slug="slug"
+        />
       </div>
     </div>
   </section>
