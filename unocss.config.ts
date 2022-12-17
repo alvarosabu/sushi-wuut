@@ -37,7 +37,15 @@ export default defineConfig({
         display: ['Dosis', 'Dosis:400,700'],
       },
     }),
-    presetIcons(),
+    presetIcons({
+      scale: 1.2,
+      warn: true,
+      extraProperties: {
+        display: 'inline-block',
+        'vertical-align': 'middle',
+        // ...
+      },
+    }),
     presetTypography(),
   ],
   transformers: [transformerDirectives(), transformerVariantGroup()],
