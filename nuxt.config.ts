@@ -1,11 +1,13 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
+import { apiPlugin } from '@storyblok/vue'
+
 export default defineNuxtConfig({
   build: {
     transpile: ['@marvr/storyblok-rich-text-vue-renderer'],
   },
-  buildModules: [
+  modules: [
     '@unocss/nuxt',
-    ['@storyblok/nuxt', { accessToken: process.env.STORYBLOK_API_TOKEN, useApiClient: true }],
+    ['@storyblok/nuxt', { accessToken: process.env.STORYBLOK_API_TOKEN, use: [apiPlugin] }],
   ],
   css: ['@unocss/reset/tailwind.css'],
 })

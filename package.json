@@ -19,13 +19,13 @@
   },
   "devDependencies": {
     "@alvarosabu/prettier-config": "^1.2.0",
-    "@iconify-json/carbon": "^1.1.8",
+    "@iconify-json/carbon": "^1.1.11",
     "@marvr/storyblok-rich-text-vue-renderer": "3.2.1",
-    "@storyblok/nuxt": "^4.4.1",
-    "@unocss/nuxt": "^0.45.26",
-    "@unocss/preset-icons": "^0.45.26",
+    "@storyblok/nuxt": "^4.6.0",
+    "@unocss/nuxt": "^0.47.6",
+    "@unocss/preset-icons": "^0.47.6",
     "axios": "^0.27.2",
-    "nuxt": "3.0.0-rc.11",
-    "prettier": "^2.7.1"
+    "nuxt": "3.0.0",
+    "prettier": "^2.8.1"
   }
 }
