@@ -73,8 +73,8 @@ export default defineNuxtConfig({
         },
         ...OPEN_GRAPH,
         ...TWITTER,
-      ]
-    }
+      ],
+    },
   },
   build: {
     transpile: ['@marvr/storyblok-rich-text-vue-renderer'],
@@ -82,6 +82,14 @@ export default defineNuxtConfig({
   modules: [
     '@unocss/nuxt',
     ['@storyblok/nuxt', { accessToken: process.env.STORYBLOK_API_TOKEN, use: [apiPlugin] }],
+    '@nuxtjs/fontaine',
+    '@nuxtjs/critters',
+    '@nuxt/image-edge',
   ],
   css: ['@unocss/reset/tailwind.css'],
+  image: {
+    storyblok: {
+      baseURL: 'https://a.storyblok.com',
+    },
+  },
 })

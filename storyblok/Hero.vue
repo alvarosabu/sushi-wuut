@@ -9,9 +9,17 @@ defineProps({
 
 <template>
   <div class="hero">
-    <div class="flex justify-between mx-auto container font-sans">
-      <img class="w-1/2" v-if="blok.media" :src="blok.media.filename" :alt="blok.media.alt" :title="blok.media.title" />
-      <div class="p-4 pt-16 w-1/3">
+    <div class="flex justify-between flex-col sm:flex-row mx-auto container font-sans">
+      <div class="w-full sm:w-1/2">
+        <img
+          class="w-full h-auto"
+          v-if="blok.media"
+          :src="blok.media.filename"
+          :alt="blok.media.alt"
+          :title="blok.media.title"
+        />
+      </div>
+      <div class="p-8 md:p-4 pt-16 w-full sm:w-1/3">
         <h1 class="text-shrimp-600 font-display text-3xl font-bold mb-4">
           {{ blok.title }}
         </h1>
